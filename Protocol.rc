@@ -1,0 +1,360 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian (Russia) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Protocol.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Mux1024.ico"
+
+IDI_IconBadDisk         ICON                    "res\\ico00006.ico"
+
+IDI_IconCDDrive         ICON                    "res\\ico00004.ico"
+
+IDI_IconClosFolder      ICON                    "res\\ico00001.ico"
+
+IDI_IconExpFolder       ICON                    "res\\icon1.ico"
+
+IDI_IconFloppy          ICON                    "res\\ico00003.ico"
+
+IDI_IconHardDrive       ICON                    "res\\ico00002.ico"
+
+IDI_IconRamDisk         ICON                    "res\\ico00005.ico"
+
+IDI_IconRemoteDisk      ICON                    "res\\iconremo.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Protocol"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Mongoose2 Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2001",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_PROTOCOL_DIALOG DIALOGEX 0, 0, 317, 125
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE | WS_EX_APPWINDOW
+CAPTION "Moongose_Bis"
+MENU IDR_MENU1
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "режим",IDC_STATIC,2,0,57,39
+    CONTROL         "Файл",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,11,13,44,8
+    CONTROL         "Каталог",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,11,25,44,8
+    RTEXT           "Соединения",IDC_STATIC,202,43,42,9
+    RTEXT           "Обработано",IDC_STATIC,202,53,42,9
+    CONTROL         "Работа",IDC_RABOTA,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,250,102,58,14
+    LTEXT           "",IDC_STATIC_C,249,42,58,9,SS_SUNKEN
+    LTEXT           "",IDC_STATIC_O,249,52,58,9,SS_SUNKEN
+    RTEXT           "Входная директория",IDC_STATIC_INT,0,42,70,9
+    RTEXT           "Рабочий каталог",IDC_STATIC_OUTT,9,52,60,9
+    LTEXT           "",IDC_STATIC_IN,73,42,122,9,SS_SUNKEN
+    LTEXT           "",IDC_STATIC_TEMP,73,52,122,9,SS_SUNKEN
+    CONTROL         "Progress2",IDC_PROGRESS2,"msctls_progress32",PBS_SMOOTH | WS_BORDER,73,108,122,6,WS_EX_DLGMODALFRAME
+    CONTROL         "Slider2",IDC_SLIDER_K,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,165,11,67,10
+    CONTROL         "Slider3",IDC_SLIDER_D,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,165,24,67,10
+    LTEXT           "Удалять короче",IDC_STATIC,96,12,57,9
+    LTEXT           "Удалять длиннее",IDC_STATIC,95,25,60,9
+    GROUPBOX        "Сеансы",IDC_STATIC,74,0,232,39
+    LTEXT           "",IDC_STATIC_KD,233,10,54,9,SS_SUNKEN
+    LTEXT           "",IDC_STATIC_DD,233,23,54,9,SS_SUNKEN
+    RTEXT           "Состояние:",IDC_STATIC,204,64,38,9
+    CTEXT           "",IDC_SOST,249,63,58,9,SS_CENTERIMAGE | SS_SUNKEN
+    CONTROL         "",IDC_CheckDelMin,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,156,11,9,10
+    CONTROL         "",IDC_CheckDelMax,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,156,24,9,10
+    RTEXT           "Каталог отбора",IDC_STATIC,9,63,60,9
+    LTEXT           "",IDC_STATIC_SEL,73,63,122,9,SS_SUNKEN
+    LTEXT           "",IDC_STATIC_NONSEL,73,73,122,9,SS_SUNKEN
+    RTEXT           "Каталог неотбора",IDC_STATIC,8,73,61,9
+    RTEXT           "Файл заголовка",IDC_STATIC,8,84,61,9
+    LTEXT           "",IDC_STATIC_HDR,73,84,122,9,SS_SUNKEN
+    LTEXT           "",IDC_STATIC_FileSel,73,95,122,9,SS_SUNKEN
+    CONTROL         "Spin4",IDC_SPIN,"msctls_updown32",UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS,303,73,11,12
+    EDITTEXT        IDC_EditSpin,275,74,30,12,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "Длина заголовка PPP:",IDC_STATIC,197,76,77,8
+    RTEXT           "Файл отбора",IDC_STATIC,13,95,55,8,NOT WS_GROUP | WS_TABSTOP
+    RTEXT           "Обрабатывать с:",IDC_STATIC,206,88,59,8
+    EDITTEXT        IDC_EditFirstNumFile,276,87,30,12,ES_AUTOHSCROLL
+END
+
+IDD_DIrOpenDialog DIALOGEX 0, 0, 168, 154
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Выбор директории для записи"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Папка:",IDC_FolderLabel,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,7,7,22,8
+    CONTROL         "Tree1",IDC_TreeDir,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | TVS_DISABLEDRAGDROP | WS_BORDER | WS_TABSTOP,7,18,153,116,WS_EX_TRANSPARENT
+    DEFPUSHBUTTON   "Принять",IDOK,32,138,46,15
+    PUSHBUTTON      "Отмена",IDCANCEL,89,138,46,15
+    LTEXT           "                                                                                    ",IDC_StaticFolderName,36,7,125,8
+END
+
+IDD_OtborDlg DIALOG 0, 0, 225, 105
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Отбор"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "по IP-адресам",IDC_RADIO_IP,"Button",BS_AUTORADIOBUTTON | WS_GROUP,18,22,93,10
+    CONTROL         "по TCP-портам",IDC_RADIO_PORT,"Button",BS_AUTORADIOBUTTON,18,36,93,10
+    CONTROL         "по TCP-портам и IP-адресам",IDC_RADIO_P_I,"Button",BS_AUTORADIOBUTTON,18,50,112,10
+    CONTROL         "без отбора",IDC_RADIO_NO,"Button",BS_AUTORADIOBUTTON,18,64,58,10
+    PUSHBUTTON      "Принять",IDOK,98,77,50,14
+    PUSHBUTTON      "Отмена",IDCANCEL,158,77,50,14
+    CONTROL         "Не сохранять неотобранные",IDC_SaveNonSel,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,97,64,115,10
+END
+
+IDD_TmpDir DIALOG 0, 0, 156, 41
+STYLE DS_SYSMODAL | DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "",IDC_STATIC,7,0,142,40,BS_FLAT
+    CTEXT           "ЖДИТЕ...",IDC_TXT1,22,9,111,8
+    CTEXT           "Обработка каталога <TEMP>",IDC_STATIC,22,16,111,8
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",WS_BORDER,22,25,111,9
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_PROTOCOL_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 124
+    END
+
+    IDD_DIrOpenDialog, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 161
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 147
+    END
+
+    IDD_OtborDlg, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 218
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 98
+    END
+
+    IDD_TmpDir, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 149
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU
+BEGIN
+    POPUP "Файл"
+    BEGIN
+        MENUITEM "Выбрать файл",                ID_IN_FILE
+        MENUITEM "Файл заголовка",              ID_HDR_FILE
+    END
+    POPUP "Выбор каталогов"
+    BEGIN
+        MENUITEM "Входная директория",          ID_IN_DIR
+        MENUITEM "Рабочий каталог",             ID_OUT_DIR
+        MENUITEM "Каталог отбора",              ID_SelDir
+        MENUITEM "Каталог неотбора",            ID_NonSelDir
+    END
+    POPUP "Отбор"
+    BEGIN
+        MENUITEM "Вид отбора",                  ID_OTBOR
+        MENUITEM "Файл отбора",                 ID_FileOtbor
+    END
+    POPUP "Конфигурация"
+    BEGIN
+        MENUITEM "Сохранить",                   ID_SaveCfg
+        MENUITEM "Загрузить",                   ID_ZagrCfg
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_PROTOCOL_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+#endif    // Russian (Russia) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "FileDescription", "Protocol MFC Application"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "Protocol"
+            VALUE "LegalCopyright", "Copyright (C) 2001"
+            VALUE "OriginalFilename", "Protocol.EXE"
+            VALUE "ProductName", "Protocol Application"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "&About Protocol..."
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\Protocol.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

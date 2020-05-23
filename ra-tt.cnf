@@ -1,0 +1,10 @@
+InpDirName:C:\
+TempDirName:C:\
+SelectDirName:C:\
+UnselDirName:C:\
+HeaderFile:ra-tt.hdr
+SelectFile:select.slc
+Select:1
+MinLen:2000
+MaxLen:4060
+Flag_SaveNonSel:0
